@@ -1,10 +1,10 @@
 /*
-Theme Name: Twenty Twelve
-Theme URI: https://wordpress.org/themes/twentytwelve/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
-Version: 4.0
+Theme Name: OSM Blog
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: Harry Wood
+Author URI: http://wordpress.org/
+Description: Modified version of the twentytelve theme for the OSM blog
+Version: 1.0
 Tested up to: 6.3
 Requires at least: 3.5
 Requires PHP: 5.2.4
@@ -63,7 +63,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 body {
-	line-height: 1;
+  font-family: 'Helvetica Neue',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.6666;
+  color: #222;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
 }
 ol,
 ul {
@@ -491,18 +498,18 @@ body {
 	font-size: 1rem;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: #444;
+	color: BLACK;/*was #444;*/
 }
 body.custom-font-enabled {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-a {
+/*a {
 	outline: none;
 	color: #21759b;
 }
 a:hover {
 	color: #0f3647;
-}
+}*/
 
 /* Assistive text */
 .assistive-text,
@@ -559,13 +566,13 @@ a:hover {
 }
 .site-header h1 a,
 .site-header h2 a {
-	color: #515151;
+	/*color: #515151;*/
 	display: inline-block;
 	text-decoration: none;
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #21759b;
+	/*color: #21759b;*/
 }
 .site-header h1 {
 	font-size: 24px;
@@ -579,11 +586,17 @@ a:hover {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #757575;
+	/*color: #757575;*/
 }
 .header-image {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
+}
+
+div#logo {
+   text-align:center;
+   margin:4px;
+   padding-bottom:36px;
 }
 
 /* Navigation Menu */
@@ -600,11 +613,11 @@ a:hover {
 	line-height: 1.42857143;
 }
 .main-navigation a {
-	color: #5e5e5e;
+	/*color: #5e5e5e;*/
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
-	color: #21759b;
+	/*color: #21759b;*/
 }
 .main-navigation ul.nav-menu,
 .main-navigation div.nav-menu > ul {
@@ -659,8 +672,8 @@ section[role="banner"] {
 	list-style: decimal;
 }
 .widget-area .textwidget li {
-	margin-left: 36px;
-	margin-left: 2.571428571rem;
+/*	margin-left: 36px;
+	margin-left: 2.571428571rem;*/
 }
 .widget-area .widget a {
 	color: #757575;
@@ -1546,7 +1559,7 @@ img#wpstats {
 		overflow: hidden;
 	}
 	.site-content {
-		float: left;
+		float: right; /*left;*/
 		width: 65.104166667%;
 	}
 	body.template-front-page .site-content,
@@ -1555,8 +1568,9 @@ img#wpstats {
 		width: 100%;
 	}
 	.widget-area {
-		float: right;
+		float: left; /*right;*/
 		width: 26.041666667%;
+                border-right:solid 1px #CCC;
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -1683,9 +1697,11 @@ img#wpstats {
 		margin-bottom: 24px;
 		margin-bottom: 1.714285714rem;
 	}
+/*
 	.template-front-page .widget-area .widget:nth-child(odd) {
 		clear: right;
 	}
+
 	.template-front-page .widget-area .widget:nth-child(even),
 	.template-front-page.two-sidebars .widget-area .front-widgets + .front-widgets {
 		float: right;
@@ -1697,38 +1713,13 @@ img#wpstats {
 	.template-front-page.two-sidebars .widget:nth-child(even) {
 		float: none;
 		width: auto;
-	}
+	}*/
 	.commentlist .children {
 		margin-left: 48px;
 		margin-left: 3.428571429rem;
 	}
 }
 
-/* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
-	body {
-		background-color: #e6e6e6;
-	}
-	body .site {
-		padding: 0 40px;
-		padding: 0 2.857142857rem;
-		margin-top: 48px;
-		margin-top: 3.428571429rem;
-		margin-bottom: 48px;
-		margin-bottom: 3.428571429rem;
-		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-	}
-	body.custom-background-empty {
-		background-color: #fff;
-	}
-	body.custom-background-empty .site,
-	body.custom-background-white .site {
-		padding: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-		box-shadow: none;
-	}
-}
 
 
 /* =Print
