@@ -13,8 +13,8 @@
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
                     <div id="logo">
-                        <a href="http://blog.openstreetmap.org" title="OpenStreetMap blog home (recent posts)"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/osm-logo.png" width="135" height="135" alt="OSM logo" id="logo"/></a>
-                        <h1>OpenStreetMap blog</h1>
+                        <a href="<?php echo esc_attr(get_bloginfo( 'url' )); ?>" title="<?php echo esc_attr(get_bloginfo( 'name' )); ?> home (recent posts)"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/osm-logo.png" width="135" height="135" alt="OSM logo" id="logo"/></a>
+                        <h1><?php echo esc_attr(get_bloginfo( 'name' )); ?></h1>
                     </div>
 
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
