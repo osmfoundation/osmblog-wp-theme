@@ -599,6 +599,23 @@ div#logo {
    padding-bottom:36px;
 }
 
+aside#rss-widget {
+   margin:4px;
+   padding-bottom:36px;
+}
+
+.rss-icon {
+   float: left;
+   padding-right: 10px;
+}
+
+.rss-content {
+   overflow: auto;
+   line-height: 38px;
+   color: #757575;
+   font-size: 0.928571rem;
+}
+
 /* Navigation Menu */
 .main-navigation {
 	margin-top: 24px;
