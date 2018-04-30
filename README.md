@@ -1,7 +1,7 @@
 blog.openstreetmap.org wordpress theme
 ======================================
 
-A wordpress theme used for blog.openstreetmap.org
+A wordpress theme used for http://blog.openstreetmap.org, the main OpenStreetMap blog run by the foundation, and also on https://join.osmfoundation.org (different wordpress instance)
 
 It's lightly customised version of the "twentywelve" theme: http://wordpress.org/themes/twentytwelve
 
