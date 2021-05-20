@@ -19,10 +19,8 @@
 
             <?php if (wp_count_posts()->publish > 1) { ?>
                 <aside id="rss-widget">
-                    <h3 class="widget-title">Subscribe</h3>
                     <div class="rss-content">
-                        <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.png" width="40" height="40" alt="RSS" class="rss-icon"/></a>
-                        via RSS
+                        <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.png" width="20" height="20" alt="RSS" class="rss-icon"> Subsribe via RSS</a>
                     </div>
                 </aside>
             <?php } ?>
