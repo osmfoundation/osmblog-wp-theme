@@ -43,8 +43,9 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentytwelve' ); ?></p>
+					<p><?php _e( 'Sorry, but nothing on the blog matched your search criteria. Please try again with some different keywords:', 'twentytwelve' ); ?></p>
 					<?php get_search_form(); ?>
+					<p>(Did you mean to <a href="https://www.openstreetmap.org/search?query=<?php echo urlencode(get_search_query(false)); ?>">search the map</a> or <a href="https://wiki.openstreetmap.org/wiki/Searching_the_wiki">search the wiki or other OpenStreetMap sites</a>?)</p>
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
 
