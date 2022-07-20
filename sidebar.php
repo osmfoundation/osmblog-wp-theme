@@ -20,7 +20,7 @@
             <?php if (wp_count_posts()->publish > 1) { ?>
                 <aside id="rss-widget">
                     <div class="rss-content">
-                        <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.png" width="20" height="20" alt="RSS" class="rss-icon"> Subsribe via RSS</a>
+                        <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.png" width="20" height="20" alt="RSS" class="rss-icon"> Subscribe via RSS</a>
                     </div>
                 </aside>
             <?php } ?>
